@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400&family=Shadows+Into+Light&family=Share+Tech&display=swap');
+body{
+margin: 0;
+font-family: share tech;
+background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0.3)), url("img/gaminglogo.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+/*   
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+  } */
+
+.image{
+position: relative;
+overflow: hidden;
+font-family: share tech;
+text-align: center;
+}
+.image:before{
+content: '';
+position: absolute;
+background: rgb(0, 0, 0.5);
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+transition: 0.4s linear;
+}
+.image:hover:before{
+opacity: 1;
+}
+.image img{
+max-width: 100%;
+width: 100%;
+height: auto;
+transition: 0.4s linear;
+}
+.image:hover img{
+opacity: 1;
+}
+.image .image-content{
+color: aqua;
+
+width: 100%;
+transform: translateY(-50%) scale(0);
+position: absolute;
+top: 50%;
+left: 0;
+transition: 0.4s linear;
+}
+.image:hover .image-content{
+transform: translateY(-50%) scale(1);
+}
+.image .image-content .title{
+letter-spacing: 1px;
+margin: 0;
+}
+.image .image-content .post{
+font-size: small;   
+}
+.image .icon{
+margin: 0;
+padding: 0;
+list-style: none;
+position: absolute;
+right: 8px ;
+bottom: 10px;
+}
+.image .icon li{
+display: inline-block;
+margin: 0;
+opacity: 0;
+transform: scale(1.3);
+transition: 0.4s linear;
+
+}
+.image:hover .icon li{
+opacity: 1;
+transform: scale(1);
+}
+.image:hover .icon li a{
+color: aqua;
+font-size: 20px;
+line-height: 20px;
+height: 20px;
+max-width: 20px;
+width: 100%;
+border-radius: 50%;
+display: block;
+transition: 0.5s ease;
+}
+.contactUS{
+max-width: 800px;
+width: 100%;
+margin: 10px auto;
+position: relative;
+box-shadow: 0 10px 30px 0px rgba(45, 235, 248, 0.486);
+padding: 30px;
+}
+.contactUS .title{
+letter-spacing: 3px;
+font-size: 3em;
+background-color: aqua;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 1, 0.479);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.banner-content{
+    position: absolute;
+    color: rgba(255, 255, 255);
+    z-index: 2;
+    text-align: center;
+}
+.banner-content h1{
+    font-weight: normal !important;
+}
